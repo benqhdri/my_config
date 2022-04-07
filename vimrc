@@ -1,4 +1,3 @@
-```shell script
 " Comments in Vimscript start with a `"`.
 
 " If you open this file in Vim, it'll be syntax highlighted for you.
@@ -83,4 +82,3 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 " copy and paste between clipboard
 vnoremap <C-c> "*y
 nnoremap <C-p> "*p
-```

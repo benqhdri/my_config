@@ -1,4 +1,3 @@
-```shell script
 set -o vi                           # use vim as default
 
 # history config
@@ -40,4 +39,3 @@ unset _ps1_symbol
 shopt -q login_shell || . /etc/profile.d/git-prompt.sh
 
 clear
-```
