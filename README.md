@@ -1,2 +1,2 @@
 # my_config
-Share configs
+Share my configs
