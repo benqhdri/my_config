@@ -20,12 +20,16 @@ CapsLock::Esc
 ; Runs
 ^!t::Run %GIT_PATH% ; Ctrl+Alt+T
 
-; switch audio devices.
+; audio funcs
+PrintScreen::Send {Volume_Down}
+ScrollLock::Send {Volume_Up}
+
 Pause::
 audio_flag:=!audio_flag
 if audio_flag
     Run %NIR_PATH% "setdefaultsounddevice" "tv"
+    ; MsgBox % "Current audio device is tv"
 else
     Run %NIR_PATH% "setdefaultsounddevice" "earphone"
-
+    ; MsgBox % "Current audio device is earphone"
 return
