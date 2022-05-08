@@ -1,6 +1,5 @@
 " --- 基础设置
 set nocompatible                                " 关闭兼容模式
-set iminsert=2                                  " 修复vim中中文输入法切换的问题
 set encoding=utf-8                              " 设置编码为utf-8
 
 " --- 语法部分
@@ -20,7 +19,7 @@ set autoindent                                  " 自动缩进
 set nu                                          " 行数
 set rnu                                         " 相对行数
 set incsearch                                   " 增量查找
-set lbr                                         " 选择在合适的位置折行
+set lbr                                         " 选择在合适的位置折行 
 set scrolloff=10                                " 滚动时保持上下五行
 set nojoinspaces                                " 在两个单词之间不能输入两个空格
 set backspace=indent,eol,start                  " backspace可用

@@ -13,9 +13,19 @@
 GIT_PATH := "C:\Program Files\Git\git-bash.exe"
 NIR_PATH := "C:\Program Files\nircmd\nircmd.exe"
 
+SwitchIME(dwLayout){
+    HKL:=DllCall("LoadKeyboardLayout", Str, dwLayout, UInt, 1)
+    ControlGetFocus,ctl,A
+    SendMessage,0x50,0,HKL,%ctl%,A
+}
+
 ; Remapping of keys
 !w::Send !{F4}
-CapsLock::Esc
+CapsLock::
+    Send {Esc}
+    SwitchIME(0x04090409) ; 退出到normal模式的时候，切换到英文
+return
+^Space::Send ^{Shift}
 
 ; Runs
 ^!t::Run %GIT_PATH% ; Ctrl+Alt+T
