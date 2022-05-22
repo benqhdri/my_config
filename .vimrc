@@ -23,7 +23,7 @@ set lbr                                         " 选择在合适的位置折行
 set scrolloff=10                                " 滚动时保持上下五行
 set nojoinspaces                                " 在两个单词之间不能输入两个空格
 set backspace=indent,eol,start                  " backspace可用
-set mouse+=a                                    " 支持鼠标
+" set mouse+=a                                    " 支持鼠标
 
 " tab转换为4个空格
 set expandtab

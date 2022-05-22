@@ -21,6 +21,12 @@ alias ll='ls -lhrt'                 # extra info compared to "l"
 alias lld='ls -lUd */'              # list directories
 alias la='ls -a'                    # list hidden files
 
+# alias for git
+alias gc='git commit'
+alias gs='git status'
+alias gp='git push'
+alias gu='git pull'
+alias gl='git log --all --graph --decorate --oneline'
 
 # Set the prompt.
 # function bash_prompt(){
