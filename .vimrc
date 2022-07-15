@@ -19,7 +19,7 @@ set autoindent                                  " 自动缩进
 set nu                                          " 行数
 set rnu                                         " 相对行数
 set incsearch                                   " 增量查找
-set lbr                                         " 选择在合适的位置折行 
+set lbr                                         " 选择在合适的位置折行
 set scrolloff=10                                " 滚动时保持上下五行
 set nojoinspaces                                " 在两个单词之间不能输入两个空格
 set backspace=indent,eol,start                  " backspace可用
